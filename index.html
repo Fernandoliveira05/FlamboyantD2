@@ -3,7 +3,7 @@
    <meta charset="UTF-8">
    <meta http-equiv="X-UA-Compatible" content="IE=edge">
    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-   <title>Flamboyant - A Sua Agência</title>
+   <title>Somnia - Sonhar, Acreditar, Conquistar</title>
    <link rel="shortcut icon" href="logotipo.ico">
    <link rel="stylesheet" href="style.css">
    <link rel="stylesheet" type="text/css" href="FOOTER/smart.css">
@@ -11,6 +11,11 @@
     integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css" rel="stylesheet"
         type="text/css">
+        <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.3/dist/umd/popper.min.js"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+        <script src="https://www.youtube.com/iframe_api"></script>
+        <script src="script.js"></script>
         
    
     
@@ -19,53 +24,186 @@
 
       <!------------------------BARRA DE NAVEGAÇÃO------------------------------>
       <section id="navbar">
-        <div class="containera green borderXwidth" style="background-color: rgb(255, 255, 255); width: 100%; filter: drop-shadow(4px 4px 6px black);">
+        <div class="containera green borderXwidth" style="background-color: #fffefdcc; margin-top: 0%; width: 100%; filter: drop-shadow(4px 4px 6px rgba(0, 0, 0, 0)); ">
           <div class="logo-and-links">
-            <img src="logo.png" style="height: 9%; width: 9%; margin-right: 25%;" alt="logo">
-            <a href="#materia">Sobre</a>
-            <a href="#portfolio">Portfólio</a>
-            <a href="#conduta">Princípios</a>
-            <a href="#services">Serviços</a>
-            <a href="#equipe">Equipe</a>
+            <img src="COMUNICAÇÃO.png" style="height: 100%; width: 20%; margin-right: 25%; margin-top: 1%;" alt="logo">
+            <a href="#materia">SOBRE NÓS</a>
+            <a href="#services" >SOLUÇÕES</a>
+            <a href="#portfolio" >CASES</a>
+            <a href="#Parceiros" >CLIENTES</a>
+            <a href="#footer" >CONTATO</a>
           </div>
         </div>
       </section>
       
-      <!--Vídeo -->
-      <div class="flaad">
-      <video autoplay loop muted poster="imagem-de-fallback.jpg">
-        <source src="./IMAGENS/multidao.mp4" type="video/mp4" style="height: 100%; width: 100%;">
-        <!-- Adicione outras sources para diferentes formatos de vídeo, se necessário -->
-        Seu navegador não suporta vídeo HTML5.
-      </video>
+<!-- Conteúdo principal -->
+<div class="flaad" style="position: relative">
+    <div class="d-flex" style="position: relative;">
+        <!-- Imagem da lua -->
+        <img src="./IMAGENS/lua (2).png" style="margin-top: 5%; height: 90%; width: 90%; margin-bottom: 1.5%; margin-left: -30%;">        <!-- Imagens menores clicáveis -->
+        <div class="d-flex flex-column bd-highlight mb-3" style="position: absolute; top: 40%; left: 0.5%; z-index: 2;">
+            <!-- Primeira imagem - Facebook -->
+            <a href="https://is.gd/qXXHGC" target="_blank" style="margin-top: -5%; display: inline-block; width: 100%; height: 100%;">
+                <img src="./IMAGENS/telefone.png" style="height: 11%; width: 11%;" alt="Telefone">
+            </a>
+            <!-- Segunda imagem - Instagram -->
+            <a href="https://api.whatsapp.com/send/?phone=5511966422434&text&type=phone_number&app_absent=0" target="_blank" class="align-self-start w-100">
+                <img src="./IMAGENS/WhatsAppt.png" style="height: 11%; width: 11%;" alt="WhatsApp">
+            </a>
+            <!-- Terceira imagem - Twitter -->
+            <a href="https://www.facebook.com/murilo" target="_blank" class="align-self-start w-100">
+                <img src="./IMAGENS/Facebook (2).png" style="height: 11%; width: 11%;" alt="Facebook">
+            </a>
+            <!-- Quarta imagem - LinkedIn -->
+            <a href="https://www.instagram.com/somniaagencia?igsh=YTRnYnhmaGtvZWNh" target="_blank" class="align-self-start w-100">
+                <img src="./IMAGENS/instagram (2).png" style="height: 11.8%; width: 11.8%;" alt="Instagram">
+            </a>
+        </div>
+        <div id="texto-lua">
+            <p>COMPROMETIDOS A <br> TRANSFORMAR A SUA <br> MARCA DO JEITO QUE VOCÊ SEMPRE <span class="azul-claro">SONHOU!</span></p>
+            <a href="https://is.gd/qXXHGC" id="botao-entre-contato">Entre em contato</a>
+        </div>
     </div>
+</div>
+<!-- <hr class="mb-5" style="color: black;"> -->
+
       
       
         <!-------------------------------MATERIA------------------------------>
-      <section id="materia">
-        <div style="height: 5%;padding-top: 30%;"></div>
-        <div class="d-flex justify-content-center">
-          <div class="container3">
-            <img src="logo.png" class="d-block w-100" style="height: 60%; width: 60%; " alt="...">
+        <section id="materia" style="background-image: url('IMAGENS/defaultSomnia.jpeg');">
+            <div style="height: 5%; padding-top: 15%;"></div>
+            <div class="container">
+                <div class="row justify-content-center">
+                    <div class="col-md-6 text-center">
+                        <img src="./IMAGENS/SOBRE NÓS.png" class="d-block mx-auto mb-4" style="height: 30%; width: auto;" alt="Sobre Nós">
+                    </div>
+                </div>
+                <div class="row justify-content-center" style="margin-top: -10%;">
+                    <div class="col-md-8 text-center">
+                        <p class="mb-4" style="font-family: HeroBold; color: #0e4c5c; font-size: 130%;">A Somnia é uma agência de comunicação apaixonada por transformar sonhos em realidade. Com uma equipe talentosa e criativa, estamos sempre buscando novas formas de inspirar e conectar pessoas através da comunicação. Nossa abordagem é centrada no cliente, trabalhando em parceria para alcançar resultados excepcionais e superar expectativas.</p>
+                    </div>
+                    <div class=" col-md-8 text-center" style="margin-top: 10% ;">
+                        <h4 class="mb-4" style="font-family: HeroBold; color: #0e4c5c;">Quem somos</h4>
+                    </div>
+                    <div class=" col-md-8 text-center" style="margin-top: -2%; margin-bottom: 10%;">
+                        <p class="mb-4" style="font-family: HeroRegular; font-weight: bold; color: #0e4c5c; font-size: 130%;">Agência criada por estudantes de Comunicação tendo em vista a realização de um projeto universitário para a unidade curricular de Comunicação Integrada.</p>
+                    </div>
+                    <!-- <div class="col-md-8 text-center" style="margin-top: -2%; margin-bottom: 10%;">
+                        <img src="IMAGENS/Garrafa (2).png" alt="parceirosImg" class="parceiro4Img animacao9">
+                    </div> -->
+                </div>
+            </div>
+        </section>
+
+             <!-------------------------------MISSÃO------------------------------>
+             <section id="conduta" style="background-color: #FAF6F5;">
+                <div class="text-white pt-5 pb-4" style="background-color: #FAF6F5;">
+                    <div class="container text-center text-md-left">
+                        <div class="row text-center text-md-left">
+                            <div class="col-md-3 mx-auto mt-1">
+                                <div class="c8 custom-container" style="background-image: url('IMAGENS/defaultSomnia.jpeg'); height: 300px;">
+                                    <h5 class="titlemvv text-uppercase mb-4" style="font-family: HeroBold; color: #0e4c5c;">MISSÃO</h5>
+                                    <p style="text-align: center; color: #0e4c5c; font-family: HeroBold;">Transformar os sonhos dos nossos clientes em realidade através de estratégias criativas e inovadoras e proporcionar resultados excepcionais e impactantes.</p>
+                                </div>
+                            </div>
+                            <div class="col-md-3 mx-auto mt-1">
+                                <div class="c8 custom-container" style="background-image: url('IMAGENS/defaultSomnia.jpeg'); height: 300px;">
+                                    <h5 class="titlemvv text-uppercase mb-4" style="font-family: HeroBold; color: #0e4c5c;">VISÃO</h5>
+                                    <p style="text-align: center; color: #0e4c5c; font-family: HeroBold;">Ser reconhecida como a principal agência de comunicação que inspira e realiza sonhos, elevar marcas e conectar pessoas através de campanhas memoráveis e experiências marcantes.</p>
+                                </div>
+                            </div>
+                            <div class="col-md-3 mx-auto mt-1">
+                                <div class="c8 custom-container" style="background-image: url('IMAGENS/defaultSomnia.jpeg'); height: 300px;">
+                                    <h5 class="titlemvv text-uppercase mb-4" style="font-family: HeroBold; color: #0e4c5c;">VALORES</h5>
+                                    <p style="text-align: center; color: #0e4c5c; font-family: HeroBold;">Criatividade; <br> Excelência; <br> Parceria; <br> Empatia; <br> Integridade;</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <hr class="mb-4" style="color: black;">
+            </section>
+      
+        <!------------------------------SERVIÇOS----------------------------->
+ <section id="services" style="background-color: #FAF6F5;">
+    <div style="height: 5%;padding-top: 1%; text-align: justify;"></div>
+    <div class="text-center mt-4">
+        <img src="IMAGENS/SOLUCOES.png" alt="parceirosImg" class="solucoesImg animacao9">
+    </div>
+      <p style="padding-top: 2%; padding-left: 10%; padding-right: 10%; font-size: 100%; text-align: center; background-color: #FAF6F5;">Somos especialistas em estratégias integradas que levam os clientes a atingir seus objetivos com maestria. Explore os serviços que oferecemos <br>e descubra como podemos transformar sua visão em realidade de maneira criativa e impactante.</p>
+  </section>
+
+
+
+  <div class="text-white pt-5 pb-4" style="background-color: #FAF6F5;">
+      <div class="container text-center text-md-left">
+          <div class="row text-center text-md-left">
+            <div class="col-med-3 col-lg-3 col-xl-3 mx-auto mt-1">
+                <div class="descricao-container">
+                    <h5 class="titlemvv text-dark text-uppercase mb-4 font-weight-bolder" style="padding-top: 2%; font-family: HeroBold;">Consultoria em Comunicação</h5>
+                    <hr class="mb-4" style="color: rgb(38, 174, 198)">
+                    <p class="descricao-text" style="color: black; text-align: justify;">Nossa consultoria em comunicação é construída sobre uma base sólida de compreensão das necessidades específicas de cada cliente. Com uma abordagem personalizada, trabalhamos em estreita colaboração com você para desenvolver estratégias de comunicação que não apenas atendam, mas excedam suas expectativas. Do diagnóstico inicial à implementação e avaliação contínua, estamos aqui para garantir que sua mensagem seja transmitida de forma clara, coerente e impactante em todos os canais, online e offline.</p>
+                </div>
+            </div>
+            
+            
+            
+            <div class="col-med-3 col-lg-3 col-xl-3 mx-auto mt-1">
+                <div class="descricao-container">
+                    <h5 class="titlemvv text-dark text-uppercase mb-4 font-weight-bolder" style="padding-top: 2%; font-family: HeroBold;">Estratégia de comunicação</h5>
+                    <hr class="mb-4" style="color: rgb(38, 174, 198)">
+                    <p class="descricao-text" style="color: black; text-align: justify;">A estratégia de comunicação é o coração pulsante de qualquer empreendimento bem-sucedido. Na nossa abordagem, cada estratégia é meticulosamente planejada para alcançar seus objetivos específicos. Desde a identificação do público-alvo até a escolha dos canais ideais, cada passo é cuidadosamente considerado para garantir que sua mensagem ressoe de maneira eficaz. Seja fortalecendo sua presença online, ampliando sua influência nas mídias sociais ou criando engajamento por meio de campanhas inovadoras, estamos aqui para orientar você em cada etapa do caminho. </p>
+                </div>
+            </div>
+            <div class="col-med-3 col-lg-3 col-xl-3 mx-auto mt-1">
+                <div class="descricao-container">
+                    <h5 class="titlemvv text-dark text-uppercase mb-4 font-weight-bolder" style="padding-top: 2%; font-family: HeroBold;">Campanhas Publicitárias</h5>
+                    <hr class="mb-4" style="color: rgb(38, 174, 198)">
+                    <p class="descricao-text" style="color: black; text-align: justify;"> Nossas campanhas publicitárias são construídas sobre a premissa de que cada marca é única e merece ser tratada como tal. Desde a concepção até a implementação e análise dos resultados, nossa equipe trabalha incansavelmente para criar campanhas que não apenas chamam a atenção, mas também geram resultados tangíveis. Seja através de anúncios impressos, comerciais de televisão ou estratégias digitais inovadoras, estamos comprometidos em ajudar sua marca a se destacar da concorrência. </p>
+                </div>
+             </div>      
+           </div>
           </div>
-          <div style="width: 5%;"></div>
-          <div class="container2">
-            <div class="text-center mt-4" style="padding-bottom: 5%;">
-              <span class="noggers15 text-uppercase"> Sobre Nós</span>
-          </div>
-          <p style="text-align: justify;">
-          Somos uma agência de comunicação integrada, que conta com profissionais capazes de responder às demandas das organizações e apoiá-las em todo o processo de comunicação. Com uma equipe altamente qualificada e comprometida formada por jornalistas, publicitários e relações-públicas, criamos estratégias de sucesso para quem busca crescer ou potencializar seu negócio.
-          </p>
-          </div>
+      </div>
+  </div>
+  <div class="text-white pt-5 pb-4" style="background-color: #FAF6F5;">
+    <div class="container text-center text-md-left">
+        <div class="row text-center text-md-left">
+            <div class="col-med-3 col-lg-3 col-xl-3 mx-auto mt-1">
+                <div class="descricao-container">
+                    <h5 class="titlemvv text-dark text-uppercase mb-4 font-weight-bolder" style="padding-top: 2%; font-family: HeroBold;">Identidade Visual e Branding</h5>
+                    <hr class="mb-4" style="color: rgb(38, 174, 198)">
+                    <p class="descricao-text" style="color: black; text-align: justify;"> Sua identidade visual é a face pública de sua marca e é essencial para criar uma conexão duradoura com seu público-alvo. Na nossa abordagem, combinamos criatividade e estratégia para desenvolver uma identidade visual que não apenas represente quem você é, mas também transmita seus valores e diferenciais de forma clara e impactante. Do design de logotipo à seleção de cores e tipografia, estamos aqui para ajudar sua marca a se destacar em um mercado cada vez mais competitivo. </p>
+                </div>
+             </div>  
+             <div class="col-med-3 col-lg-3 col-xl-3 mx-auto mt-1">
+                <div class="descricao-container">
+                    <h5 class="titlemvv text-dark text-uppercase mb-4 font-weight-bolder" style="padding-top: 2%; font-family: HeroBold;">Produção Audiovisual</h5>
+                    <hr class="mb-4" style="color: rgb(38, 174, 198)">
+                    <p class="descricao-text" style="color: black; text-align: justify;"> Na era digital, o conteúdo audiovisual tornou-se uma ferramenta essencial para envolver e cativar o público. Com nossa experiência e expertise em produção audiovisual, ajudamos você a contar histórias convincentes que ressoam com seu público-alvo. Seja através de vídeos promocionais, animações, ou documentários, nossa equipe trabalha incansavelmente para garantir que seu conteúdo se destaque em meio ao ruído digital e deixe uma impressão duradoura. </p>
+                </div>
+             </div>  
+             <div class="col-med-3 col-lg-3 col-xl-3 mx-auto mt-1">
+                <div class="descricao-container">
+                    <h5 class="titlemvv text-dark text-uppercase mb-4 font-weight-bolder" style="padding-bottom: 6%; padding-top: 2%; font-family: HeroBold;">Marketing Digital</h5>
+                    <hr class="mb-4" style="color: rgb(38, 174, 198);">
+                    <p class="descricao-text" style="color: black; text-align: justify;">No mundo digital de hoje, uma forte presença online é essencial para o sucesso de qualquer negócio. Com nossa expertise em marketing digital, ajudamos você a navegar pelo complexo cenário digital e alcançar seus objetivos de forma eficaz. Desde a otimização de mecanismos de pesquisa (SEO) até a gestão de mídias sociais e campanhas de e-mail marketing, nossa equipe trabalha em estreita colaboração com você para desenvolver estratégias personalizadas que gerem resultados mensuráveis e impulsionem o crescimento do seu negócio.</p>
+                </div>
+             </div>  
+                
+            </div>
         </div>
-        <hr class="mb-4" style="color: black;">
-      </section>
-      <!-------------------------------PORTFÓLIO------------------------------>
-      <section id="portfolio">
+    </div>
+</div>
+<hr class="mb-4" style="color: black;">
+</section>
+
+     <!-------------------------------PORTFÓLIO------------------------------>
+     <section id="portfolio" style="background-image: url('IMAGENS/defaultSomnia.jpeg');">
         <div class="container">
             <div class="texto">
-                <div class="text-center mt-4" style="padding-bottom: 3%; padding-top: 6%;">
-                    <span class="noggers100 text-uppercase">Portfólio</span>
+                <div class="text-center mt-4" style="padding-bottom: 1%; padding-top: 3%;">
+                    <img src="IMAGENS/CASES.png" alt="parceirosImg" class="casesImg animacao9">
                 </div>
                 <p style="text-align: center; padding-bottom: 3%;">
                     Confira alguns dos projetos realizados pela equipe:
@@ -75,19 +213,19 @@
         <div class="container">
             <div class="row">
                 <div id="portfolioCarousel" class="carousel slide" data-bs-ride="carousel">
-    <div class="carousel-inner">
+                    <div class="carousel-inner">
                         <!-- Primeiro Slide -->
                         <div class="carousel-item active">
                             <div class="row">
                                 <div class="col-md-4">
                                     <div class="portfolio-item">
                                         <div class="portfolio-image">
-                                            <img src="./IMAGENS/FASTSHOP.png" alt="Projeto 1">
+                                            <img src="./IMAGENS/Sonhos.png" alt="Projeto 1">
                                         </div>
                                         <div class="portfolio-details" style="height: 200px;">
-                                            <h3>Análise de marca - Fast Shop</h3>
-                                            <p>Breve análise em torno da marca e plano de comunicação digital, realizado em 2023.</p>
-                                            <a href="./docs/Fast Shop.pdf" target="_blank" class="btn btn-danger">Abrir Documento</a>
+                                            <h3>Sonhos - Made in OZ</h3>
+                                            <p>Com uma abordagem reflexiva e intimista, oferecemos a oportunidade de refletir sobre seus próprios sonhos e encontrar inspiração nas histórias compartilhadas.</p>
+                                            <a href="https://www.youtube.com/watch?v=vFAI0xeFGwI" target="_blank" class="btn">Visitar Trabalho</a>
                                         </div>
                                     </div>
                                 </div>
@@ -95,12 +233,12 @@
                                 <div class="col-md-4">
                                     <div class="portfolio-item">
                                         <div class="portfolio-image">
-                                            <img src="./IMAGENS/xiaomi.png" alt="Projeto 2">
+                                            <img src="./IMAGENS/Lugubre.png" alt="Projeto 2">
                                         </div>
                                         <div class="portfolio-details" style="height: 200px;">
-                                            <h3>Análise de marca - Xiaomi</h3>
-                                            <p>Breve análise em torno da marca e plano de comunicação digital, realizado em 2023.</p>
-                                            <a href="./docs/Xiaomi (2).pdf" target="_blank" class="btn btn-danger">Abrir Documento</a>
+                                            <h3>Cinelunga - Lúgubre</h3>
+                                            <p>Curta de terror, projeto feito por alunos de diversos cursos da USJT Butantã.</p>
+                                            <a href="https://www.youtube.com/watch?v=_HfKBL3JkUU&t=8s" target="_blank" class="btn">Visitar Trabalho</a>
                                         </div>
                                     </div>
                                 </div>
@@ -108,12 +246,12 @@
                                 <div class="col-md-4">
                                     <div class="portfolio-item">
                                         <div class="portfolio-image">
-                                            <img src="./IMAGENS/as vantagens.png" alt="Projeto 3">
+                                            <img src="./IMAGENS/SubwayMarca.png" alt="Projeto 3">
                                         </div>
                                         <div class="portfolio-details" style="height: 200px;">
-                                            <h3>Ensaio crítico - As Vantagens de ser Invisível</h3>
-                                            <p>Ensaio crítico (análise) do filme "As Vantagens de ser Invisível" em formato de e-book, realizado em 2023.</p>
-                                            <a href="./docs/E-BOOK AS VANTAGENS DE SER INVISÍVEL.pdf" target="_blank" class="btn btn-danger">Abrir Documento</a>
+                                            <h3>Análise de marca - Subway</h3>
+                                            <p>Breve análise em torno da marca e plano de comunicação digital, realizado em 2023.</p>
+                                            <a href="./docs/APRESENTAÇÃO.pdf" target="_blank" class="btn">Visitar Trabalho</a>
                                         </div>
                                     </div>
                                 </div>
@@ -126,12 +264,12 @@
                                 <div class="col-md-4">
                                     <div class="portfolio-item">
                                         <div class="portfolio-image">
-                                            <img src="./IMAGENS/A NOIVA CADÁVER.png" alt="Projeto 1">
+                                            <img src="./IMAGENS/as vantagens.png" alt="Projeto 1">
                                         </div>
                                         <div class="portfolio-details" style="height: 200px;">
-                                            <h3>Ensaio crítico - A Noiva Cadáver</h3>
-                                            <p>Ensaio crítico (análise) do filme "A Noiva Cadáver" em formato de e-book, realizado em 2023.</p>
-                                            <a href="./docs/Trabalho LRE  Noiva Cadáver.pdf" target="_blank" class="btn btn-danger">Abrir Documento</a>
+                                            <h3>Ensaio crítico - As Vantagens de ser Invisível</h3>
+                                            <p>Ensaio crítico (análise) do filme "As Vantagens de ser Invisível" em formato de e-book, realizado em 2023.</p>
+                                            <a href="./docs/E-BOOK AS VANTAGENS DE SER INVISÍVEL.pdf" target="_blank" class="btn">Visitar Trabalho</a>
                                         </div>
                                     </div>
                                 </div>
@@ -139,12 +277,12 @@
                                 <div class="col-md-4">
                                     <div class="portfolio-item">
                                         <div class="portfolio-image">
-                                            <img src="./IMAGENS/tropa.png" alt="Projeto 2">
+                                            <img src="./IMAGENS/LeMon60.png" alt="Projeto 2">
                                         </div>
                                         <div class="portfolio-details" style="height: 200px;">
-                                            <h3>Ensaio crítico - Tropa de Elite</h3>
-                                            <p>Ensaio crítico (análise) do filme "Tropa de Elite" em formato de e-book, realizado em 2023.</p>
-                                            <a href="./docs/uc1.pdf" target="_blank" class="btn btn-danger">Abrir Documento</a>
+                                            <h3>Manual de Identidade Visual - Le Mon</h3>
+                                            <p>Manual de identidade visual da Le Mon, uma agência de comunicadores digitais. </p>
+                                            <a href="./docs/Manual de ID visual Le Mon.pdf" target="_blank" class="btn">Visitar Trabalho</a>
                                         </div>
                                     </div>
                                 </div>
@@ -152,12 +290,12 @@
                                 <div class="col-md-4">
                                     <div class="portfolio-item">
                                         <div class="portfolio-image">
-                                            <img src="./IMAGENS/CIDADE de DEUS.png" alt="Projeto 3">
+                                            <img src="./IMAGENS/Lambo.png" alt="Projeto 3">
                                         </div>
                                         <div class="portfolio-details" style="height: 200px;">
-                                            <h3>Ensaio crítico - Cidade de Deus</h3>
-                                            <p>Ensaio crítico (análise) do filme "Cidade de Deus" em formato de e-book, realizado em 2023.</p>
-                                            <a href="./docs/E-BOOK CIDADE DE DEUS (1).pdf" target="_blank" class="btn btn-danger">Abrir Documento</a>
+                                            <h3>Identidade Visual - Lamborghini</h3>
+                                            <p>Identidade Visual para a Lamborghini Huracan.</p>
+                                            <a href="./IMAGENS/IMG_1118.JPG" target="_blank" class="btn">Visitar Trabalho</a>
                                         </div>
                                     </div>
                                 </div>
@@ -165,6 +303,7 @@
                         </div>
                     </div>
     
+                    <!-- Botões de controle -->
                     <button class="carousel-control-prev" type="button" data-bs-target="#portfolioCarousel" data-bs-slide="prev" style="margin-left: -90px;">
                         <span class="carousel-control-prev-icon" aria-hidden="true"></span>
                         <span class="visually-hidden">Previous</span>
@@ -177,242 +316,176 @@
             </div>
         </div>
         <div style="height: 5%;"></div>
-        <hr class="mb-4" style="color: black; position: sticky; padding-top: 6%;">
     </section>
-    
-    
-    
-        <!-------------------------------ARDUINO------------------------------>
-        <section id="conduta">
-            <div class="text-center mt-4" style="padding-top: 1%;">
-              <span class="noggers text-uppercase" style="align-self: center; justify-content: center;"> Princípios</span>
-          </div>
-          <div class="bg-white text-white pt-5 pb-4">
-              <div class="container text-center text-md-left">
-                  <div class="row text-center text-md-left">
-                      <div class="col-med-3 col-lg-3 col-xl-3 mx-auto mt-1">
-                          <h5 class="titlemvv text-dark text-uppercase mb-4 font-weight-bold">visão</h5>
-                          <hr class="mb-4" style="color: rgb(255, 0, 0);">
-                          <i class="fas fa-eye mb-4" style="color: rgb(0, 0, 0); font-size: 100px;"></i>
-                          <p class="text-dark" style="text-align: justify;">Ser referência em comunicação integrada no Brasil, com qualidade nos serviços e impacto positivo para os clientes, trazendo uma dinâmica permanente de inovação e crescimento.
-                          </p>
-                      </div>
-                      <div class="col-med-3 col-lg-3 col-xl-3 mx-auto mt-1">
-                          <h5 class="titlemvv text-dark text-uppercase mb-4 font-weight-bold">missão</h5>
-                          <hr class="mb-4" style="color: rgb(255, 0, 0);">
-                          <i class="fas fa-bullseye mb-4" style="color: rgb(0, 0, 0); font-size: 100px;"></i>
-                          <p class="text-dark" style="text-align: justify;">Capacitar os clientes para poderem florescer como o flamboyant em sua plenitude. Atender às demandas de cada cliente, cultivando parcerias com raízes sólidas. Oferecer soluções de comunicação que os ajudem a alcançar destaque e sucesso no mercado.
-                          </p>
-                      </div>
-                      <div class="col-med-3 col-lg-3 col-xl-3 mx-auto mt-1">
-                          <h5 class="titlemvv text-dark text-uppercase mb-4 font-weight-bold">valores</h5>
-                          <hr class="mb-4" style="color: rgb(255, 0, 0);">
-                          <i class="fas fa-handshake mb-4" style="color: rgb(0, 0, 0); font-size: 100px;"></i>
 
-                          <div class="hidden-content">
-                            <div class="texto" id="texto1">
-                              <p class="text-dark titulo" style="text-align: justify; font-weight: bold;">1. Integridade</p>
-                              <p class="text-dark descricao" style="text-align: justify;">Agimos com transparência em todas as parcerias, mantendo a confiança dos clientes.<br></p>
-                            </div>
-                          
-                            <div class="texto" id="texto2">
-                              <p class="text-dark titulo" style="text-align: justify; font-weight: bold;">2. Colaboração</p>
-                              <p class="text-dark descricao" style="text-align: justify;">Valorizamos o trabalho em equipe e reconhecemos que juntos somos mais fortes.<br></p>
-                            </div>
-                          
-                            <div class="texto" id="texto2">
-                              <p class="text-dark titulo" style="text-align: justify; font-weight: bold;">3. Sustentabilidade</p>
-                              <p class="text-dark descricao" style="text-align: justify;">Operamos de maneira sustentável, reduzindo o impacto no meio ambiente e contribuindo para o planeta.<br></p>
-                            </div>
-
-                            <div class="texto" id="texto2">
-                              <p class="text-dark titulo" style="text-align: justify; font-weight: bold;">4. Entusiasmo</p>
-                              <p class="text-dark descricao" style="text-align: justify;">Temos dedicação pelo trabalho desenvolvido e nos orgulhamos de usar a comunicação para transformar empresas.<br></p>
-                            </div>
-                          </div>
-                          
-                          
-                      </div>
-                  </div>
-              </div>
-          </div>
-          <hr class="mb-4" style="color: black;">
-        </section>
-
- <!------------------------------SERVIÇOS----------------------------->
- <section id="services">
-    <div style="height: 5%;padding-top: 6%; text-align: justify;"></div>
-      <div class="texto100">
-        <span class="noggers455 text-uppercase" style="padding-left: 40%; text-align: center; ">SERVIÇOS</span>
-      </div>
-      <p style="padding-top: 2%; padding-left: 10%; padding-right: 10%; font-size: 100%; text-align: center;">Somos especialistas em estratégias integradas que levam os clientes a atingir seus objetivos com maestria. Explore os serviços que oferecemos <br>e descubra como podemos transformar sua visão em realidade de maneira criativa e impactante.</p>
-  </section>
-
-
-
-  <div class="bg-white text-white pt-5 pb-4">
-      <div class="container text-center text-md-left">
-          <div class="row text-center text-md-left">
-            <div class="col-med-3 col-lg-3 col-xl-3 mx-auto mt-1">
-                <div class="descricao-container">
-                    <img src="./IMAGENS/360-degrees.png" alt="Descrição da imagem" class="imagem200">
-                    <h5 class="titlemvv text-dark text-uppercase mb-4 font-weight-bolder" style="padding-top: 2%;">Comunicação 360º</h5>
-                    <hr class="mb-4" style="color: rgb(255, 0, 0)">
-                    <p class="descricao-text" style="color: black; text-align: justify;">Oferecemos uma abordagem de comunicação que abrange todos os canais, online e offline. Isso garante que sua mensagem atinja o seu público de maneira eficaz e consistente, seja por meio de mídias sociais, publicidade, eventos ou outros meios.</p>
+    <!---------------------------------VIDEO----------------------------------->
+<section id="video" style="margin-top: 5%;">
+    <div class="container">
+        <div class="row">
+            <!-- Seção do Vídeo -->
+            <div class="col-md-6">
+                <div class="video-container">
+                    <!-- Substitua o link abaixo pelo link do seu vídeo do YouTube -->
+                    <iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/vFAI0xeFGwI?si=V3M_BFuvOM4--Tg9" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
                 </div>
             </div>
-            
-            
-            
-            <div class="col-med-3 col-lg-3 col-xl-3 mx-auto mt-1">
-                <div class="descricao-container">
-                    <img src="./IMAGENS/branding.png" alt="Descrição da imagem" class="imagem200">
-                    <h5 class="titlemvv text-dark text-uppercase mb-4 font-weight-bolder" style="padding-top: 2%;">Branding</h5>
-                    <hr class="mb-4" style="color: rgb(255, 0, 0)">
-                    <p class="descricao-text" style="color: black; text-align: justify;"> O branding é o processo de criar e fortalecer a identidade da sua marca. Nós pesquisamos para desenvolver uma narrativa única e uma identidade visual consistente, para que sua marca se destaque e seja facilmente reconhecida pelos clientes.</p>
+            <!-- Seção da Explicação -->
+            <div class="col-md-6">
+                <div class="explanation">
+                    <img src="IMAGENS/MadeApresenta.png" style="height: 20%; margin-left: -3%;">
+                    <h2>SONHOS</h2>
+                    <p>Com uma abordagem reflexiva e intimista, a Made in Oz oferece a oportunidade de refletir sobre seus próprios sonhos e encontrar inspiração nas histórias compartilhadas.</p>
                 </div>
-            </div>
-            <div class="col-med-3 col-lg-3 col-xl-3 mx-auto mt-1">
-                <div class="descricao-container">
-                    <img src="./IMAGENS/social-media.png" alt="Descrição da imagem" class="imagem200">
-                    <h5 class="titlemvv text-dark text-uppercase mb-4 font-weight-bolder" style="padding-top: 2%;">Mídias Sociais</h5>
-                    <hr class="mb-4" style="color: rgb(255, 0, 0)">
-                    <p class="descricao-text" style="color: black; text-align: justify;"> Gerenciamos sua presença nas redes sociais de forma estratégica. Criamos conteúdo envolvente e interativo, impulsionando o engajamento e construindo uma comunidade leal de seguidores.</p>
-                </div>
-             </div>      
-           </div>
-          </div>
-      </div>
-  </div>
-  <div class="bg-white text-white pt-5 pb-4">
-    <div class="container text-center text-md-left">
-        <div class="row text-center text-md-left">
-            <div class="col-med-3 col-lg-3 col-xl-3 mx-auto mt-1">
-                <div class="descricao-container">
-                    <img src="./IMAGENS/lectern.png" alt="Descrição da imagem" class="imagem200">
-                    <h5 class="titlemvv text-dark text-uppercase mb-4 font-weight-bolder" style="padding-top: 2%;">Relacionamento com a imprensa</h5>
-                    <hr class="mb-4" style="color: rgb(255, 0, 0)">
-                    <p class="descricao-text" style="color: black; text-align: justify;"> Estabelecemos e mantemos relacionamentos sólidos com a imprensa. Nossa equipe trabalha para garantir que sua marca receba a cobertura midiática adequada, promovendo notícias positivas e gerando visibilidade.</p>
-                </div>
-             </div>  
-             <div class="col-med-3 col-lg-3 col-xl-3 mx-auto mt-1">
-                <div class="descricao-container">
-                    <img src="./IMAGENS/team.png" alt="Descrição da imagem" class="imagem200">
-                    <h5 class="titlemvv text-dark text-uppercase mb-4 font-weight-bolder" style="padding-top: 9.7%;">Gestão de crise</h5>
-                    <hr class="mb-4" style="color: rgb(255, 0, 0)">
-                    <p class="descricao-text" style="color: black; text-align: justify;"> Em momentos desafiadores, nossa equipe está preparada para gerenciar crises de comunicação. Minimizamos danos à sua confiança, fornecendo estratégias de resposta rápida e eficaz, mantendo a confiança do público.</p>
-                </div>
-             </div>  
-             <div class="col-med-3 col-lg-3 col-xl-3 mx-auto mt-1">
-                <div class="descricao-container">
-                    <img src="./IMAGENS/analysing.png" alt="Descrição da imagem" class="imagem200">
-                    <h5 class="titlemvv text-dark text-uppercase mb-4 font-weight-bolder" style="padding-top: 9.7%;">Análise da marca</h5>
-                    <hr class="mb-4" style="color: rgb(255, 0, 0)">
-                    <p class="descricao-text" style="color: black; text-align: justify;">Nossa análise de marca avalia a percepção atual de sua marca no mercado. Identificamos pontos fortes e oportunidades de melhoria, ajudando você a construir uma imagem de marca sólida e autêntica.</p>
-                </div>
-             </div>  
-                
             </div>
         </div>
     </div>
-</div>
-<hr class="mb-4" style="color: black;">
+    <div class="container">
+        <div class="row">
+            <!-- Seção do Vídeo (Agora na Direita) -->
+            <div class="col-md-6 order-md-2">
+                <div class="video-container">
+                    <!-- Substitua o link abaixo pelo link do seu vídeo do YouTube -->
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/_HfKBL3JkUU?si=cb3Wdpsh8ckhbB_l" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                </div>
+            </div>
+            <!-- Seção da Explicação (Agora na Esquerda) -->
+            <div class="col-md-6 order-md-1">
+                <div class="explanation">
+                    <img src="IMAGENS/Gaze.png" style="height: 20%; margin-left: -3%;">
+                    <h2>Lúgubre - Cinelunga</h2>
+                    <p>Projeto acadêmico feito por alunos de diversos cursos da USJT Butantã, para o projeto de extensão</p>
+                </div>
+            </div>
+        </div>
+    </div>
 </section>
+
+     <!-------------------------------PARCEIROS------------------------------>
+     <section id="Parceiros">
+        <div class="container">
+            <div class="text-center mt-4">
+                <!-- Substitua o texto por uma imagem -->
+                <img src="IMAGENS/PARCEIROS.png" alt="parceirosImg" class="parceirosImg animacao9">
+            </div>
+            <div class="parceiros">
+                <img src="Subway/SubWay.png" alt="Empresa 1" class="parceiro">
+                <img src="IMAGENS/Lamborghini.png" alt="Empresa 2" class="parceiro central">
+                <img src="IMAGENS/LeMon.png" alt="Empresa 3" class="parceiro">
+            </div>
+        </div>
+    </section>
+
         <!-------------------------------EQUIPE------------------------------>
         <section id="equipe">
-            <div class="text-center mt-4" style="padding-top: 6%;">
-              <span class="noggers34 text-uppercase" style="align-self: center; justify-content: center;">Equipe</span>
-              </div>
-              <div class="team-section" >
-                <div class="team-member">
-                    <img src="./IMAGENS/SasahS2.png" alt="Membro 8">
-                    <div class="team-info">
-                        <div class="team-name">Sarah Macedo</div>
-                        <div class="team-title">CEO</div>
-                    </div>
-                  </div>
-                  <div class="team-member">
-                    <img src="./IMAGENS/Lívia.png" alt="Membro 4">
-                    <div class="team-info">
-                        <div class="team-name">Lívia Duarte</div>
-                        <div class="team-title">Copresidente</div>
-                    </div>
+            <div class="container">
+                <div class="text-center mt-4" style="padding-top: 6%;">
+                    <img src="IMAGENS/EQUIPE.png" alt="parceirosImg" class="equipeImg animacao9">
                 </div>
-                <div class="team-member">
-                    <img src="./IMAGENS/Allef.png" alt="Membro 1">
-                    <div class="team-info">
-                        <div class="team-name">Allef Lopes</div>
-                        <div class="team-title">Diretor de comunicação</div>
+                <div class="row justify-content-center">
+                    <div class="col-md-3">
+                        <div class="team-member">
+                            <img src="./IMAGENS/Alice.png" alt="Membro 8">
+                            <div class="team-info">
+                                <div class="team-name">Alice Ortega</div>
+                                <div class="team-title">Content Strategist</div>
+                            </div>
+                        </div>
                     </div>
-                </div>
-                <div class="team-member">
-                    <img src="./IMAGENS/Douglas.png" alt="Membro 3">
-                    <div class="team-info">
-                        <div class="team-name">Douglas Fulop</div>
-                        <div class="team-title">Diretor de criação</div>
+                    <div class="col-md-3">
+                        <div class="team-member">
+                            <img src="./IMAGENS/AnaBeatriz.png" alt="Membro 4">
+                            <div class="team-info">
+                                <div class="team-name">Ana Mariozi</div>
+                                <div class="team-title">Design</div>
+                            </div>
+                        </div>
                     </div>
-                </div>
-                <div class="team-section" style="padding-top: 2.5%; padding-bottom: 10%;">
-                <div class="team-member">
-                    <img src="./IMAGENS/Lucas.png" alt="Membro 6">
-                    <div class="team-info">
-                        <div class="team-name">Lucas Almeida</div>
-                        <div class="team-title">Diretor de mídias</div>
+                    <div class="col-md-3">
+                        <div class="team-member">
+                            <img src="./IMAGENS/Gabriel.png" alt="Membro 4">
+                            <div class="team-info">
+                                <div class="team-name">Gabriel Belmonte</div>
+                                <div class="team-title">Diretor de Arte</div>
+                            </div>
+                        </div>
                     </div>
-                </div>
-                <div class="team-member">
-                    <img src="./IMAGENS/Ana Lívia.png" alt="Membro 2">
-                    <div class="team-info">
-                        <div class="team-name">Ana Lívia Oliveira</div>
-                        <div class="team-title">Diretora de RH</div>
-                    </div>
-                </div>
-                  <div class="team-member">
-                      <img src="./IMAGENS/Gabriel.png" alt="Membro 7">
-                      <div class="team-info">
-                          <div class="team-name">Gabriel Maluhy</div>
-                          <div class="team-title">Diretor de negócios</div>
-                      </div>
-                  </div>
-                    <div class="team-member">
-                        <img src="./IMAGENS/Luana.png" alt="Membro 5">
-                        <div class="team-info">
-                            <div class="team-name">Luana Baldini</div>
-                            <div class="team-title">Diretora financeira</div>
+                    <div class="col-md-3">
+                        <div class="team-member">
+                            <img src="./IMAGENS/Giovanna_Lemes.png" alt="Membro 1">
+                            <div class="team-info">
+                                <div class="team-name">Giovanna Lemes</div>
+                                <div class="team-title">Social Media</div>
+                            </div>
                         </div>
                     </div>
                 </div>
-              </div>
-            </div>
-        </section>
+                <div class="row justify-content-center" style="padding-bottom: 10%;">
+                    <div class="col-md-3">
+                        <div class="team-member">
+                            <img src="./IMAGENS/Leandro.png" alt="Membro 3">
+                            <div class="team-info">
+                                <div class="team-name">Leandro Kuhne</div>
+                                <div class="team-title">Diretor de mídia</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <div class="team-member">
+                            <img src="./IMAGENS/Murilo.png" alt="Membro 6">
+                            <div class="team-info">
+                                <div class="team-name">Murilo Lopes</div>
+                                <div class="team-title">Diretor criativo</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <div class="team-member">
+                            <img src="./IMAGENS/Pedro.png" alt="Membro 2">
+                            <div class="team-info">
+                                <div class="team-name">Pedro Maciel</div>
+                                <div class="team-title">Redator</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <div class="team-member">
+                            <img src="./IMAGENS/Victoria.png" alt="Membro 2">
+                            <div class="team-info">
+                                <div class="team-name">Victoria Fernanda</div>
+                                <div class="team-title">Diretora de Arte</div>
+                            </div>
+                        </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                </section>
         <!---------------------Carregamento Scripts-->
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
         <script src="script.js"></script>
       </body>
 
 
-
-
-
       <!---------------footer------------------------>
-      <footer class="bg text-white" style="background-color: black; padding: 10px;">
+      <section id="footer">
+      <footer class="bg text-white" style="background-image: url('IMAGENS/defaultSomnia.jpeg'); padding-top: 5%;">
         <div class="container">
             <div class="row">
                 <div class="col-md-6">
-                    <h5 class="mb-4 font-weight-bold" style="color: rgb(255, 255, 255);">Contato</h5>
-                    <p class="paragraf" style="color: floralwhite;">
+                    <h5 class="mb-4 font-weight-bold" style="color: rgb(0, 0, 0); font-family: HeroBold;">Contato</h5>
+                    <p class="paragraf" style="color: rgb(0, 0, 0);">
                         <i class="fas fa-home mr-3"></i> Av. Vital Brasil, 1000 - Butantã, São Paulo - SP, 05503-001
                     </p>
-                    <p class="paragraf" style="color: floralwhite;">
-                        <i class="fas fa-envelope mr-3"></i> flamboyantcomunicacao@gmail.com
+                    <p class="paragraf" style="color: rgb(0, 0, 0); font-family: HeroBold;">
+                        <i class="fas fa-envelope mr-3"></i> somniagencia@gmail.com
                     </p>
-                    <p class="paragraf" style="color: floralwhite;">
-                        <i class="fas fa-mobile mr-3"></i> +55 (11) 4799-1677
+                    <p class="paragraf" style="color: rgb(0, 0, 0); font-family: HeroBold;">
+                        <i class="fas fa-mobile mr-3"></i> +55 (11) 4786-5754
                     </p>
-                    <a href="./Imprensa/Imprensa.html" style="color: white; font-weight: bolder;">Imprensa</a>
+                    <a href="./Imprensa/Imprensa.html" style="color: rgb(0, 0, 0); font-family: HeroBold;">Imprensa</a>
                 </div>
                 <div class="col-md-6" style="padding-right: 5%;">
-                    <h5 class="mb-4 font-weight-bold" style="color: rgb(255, 255, 255);">Envie sua Mensagem</h5>
+                    <h5 class="mb-4 font-weight-bold" style="color: rgb(0, 0, 0); font-family: HeroBold;">Envie sua Mensagem</h5>
                     <form action="action_page.php">
                         <div class="form-group">
                             <input type="text" id="fname" name="firstname" class="form-control" placeholder="Nome Completo">
@@ -431,10 +504,5 @@
             </div>
         </div>
     </footer>
-    
-    
-    
-    
-
-
+</section>
 </html>

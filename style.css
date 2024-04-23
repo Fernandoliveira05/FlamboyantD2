@@ -1,5 +1,20 @@
 @import 'https://fonts.googleapis.com/css?family=Raleway';
+@import 'https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap';
 
+@font-face {
+  font-family: 'HeroBold';
+  src: url('FONTES/Hero-Bold.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'HeroLight';
+  src: url('FONTES/Hero-Light.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'HeroRegular';
+  src: url('FONTES/Hero-Regular.ttf') format('truetype');
+}
 
 body {
   display: flex;
@@ -84,7 +99,7 @@ body {
 }
 
 .noggers::before {
-  background-color: rgba(255, 0, 0, 0.342);
+  background-color: #0e4c5c8f;
   bottom: 7%;
   content: "";
   display: block;
@@ -103,7 +118,7 @@ body {
 <!---------------FOOTER---------------------->
 
 .bg {
-  background-color: rgb(255, 255, 255);
+  background-color: #ffffff;
 }
 
 .paragraf {
@@ -126,7 +141,7 @@ body {
 }
 
 .top:hover {
-  color: rgb(197, 135, 0);
+  color: rgb(255, 255, 255);
 }
 
 .Nav-title {
@@ -141,35 +156,34 @@ body {
 
 .green
 {
-    background-color: rgb(255, 255, 255);
+    background-color: rgba(255, 255, 255, 0);
 }
 /* Defina flexbox no contêiner pai */
 div.containera {
   display: flex;
   justify-content: space-between; /* Alinha os elementos com espaço entre eles */
   align-items: center;
-  font-family: Raleway;
-  margin: 0 auto;
+  font-family: 'HeroBold';
+  margin: 20 auto;
   position: fixed;
   z-index: 2;
-  background-color: rgb(255, 255, 255);
+  background-color: #ffffff;
   width: 100%;
-  filter: drop-shadow(4px 4px 6px black);
-  padding: 10px; /* Adicione algum espaço ao redor dos elementos */
+  padding: 0px; /* Adicione algum espaço ao redor dos elementos */
+  font-weight: bold;
 }
 
-
 div.containera a {
-  color: #020703;
+  color: #0a4c5b;
   text-decoration: none;
-  font: 20px Raleway;
-  margin: 10px 10px;
-  padding: 10px 10px;
+  font: 20px Quicksand;
+  margin: 5px 5px;
+  padding: 5px 5px;
   position: relative;
   z-index: 1;
   cursor: pointer;
   font-weight: bolder;
-  font-family: 'Raleway', sans-serif;
+  font-family: 'HeroBold';
 }
 
 
@@ -180,7 +194,7 @@ div.borderXwidth a:after {
   width: 0%;
   height: 2px;
   content: '';
-  background: #ff0000;
+  background: #6EB1BE;
   transition: all 0.3s;
 }
 
@@ -230,6 +244,7 @@ figcaption { font: 120% sans-serif; text-align: center;}
 /* Mostrar as descrições quando o mouse estiver sobre os títulos */
 .titulo:hover + .descricao {
   display: block;
+  transition: all 0.3s;
 }
 
 .noggers2 {
@@ -244,7 +259,7 @@ figcaption { font: 120% sans-serif; text-align: center;}
 }
 
 .noggers2::before {
-  background-color: rgba(255, 0, 0, 0.342);
+  background-color: #0e4c5c8f;
   bottom: 7%;
   content: "";
   display: block;
@@ -256,11 +271,10 @@ figcaption { font: 120% sans-serif; text-align: center;}
 }
 
 div.flaad{
-position: relative;
-top: 1%;
+position: absolute;
+top: 3%;
 left: 0%;
-width: 100%;
-height: 5%;
+font-family: 'HeroRegular';
 
 }
 
@@ -286,7 +300,7 @@ height: 5%;
 }
 
 .noggers3::before {
-  background-color: rgba(255, 0, 0, 0.342);
+  background-color: #0e4c5c8f;
   bottom: 7%;
   content: "";
   display: block;
@@ -297,17 +311,28 @@ height: 5%;
   z-index: -1;
 }
 
- /* Defina a cor das setas do carrossel como preto */
- .carousel-control-prev-icon,
+.container {
+  width: 100%;
+}
+.carousel {
+  display: flex;
+  overflow: hidden;
+  width: 100%;
+  max-width: 80%; /* Ajuste o tamanho conforme necessário */
+  margin: 0 auto;
+}
+
+.carousel-control-prev-icon,
  .carousel-control-next-icon {
-     background-color: #000; /* Cor preta */
+     background-color: #00b7ff68; /* Cor preta */
  }
 
  /* Defina a cor de fundo do botão como preta */
  .carousel-control-prev,
  .carousel-control-next {
-     background-color: #000; /* Cor preta */
+     background-color: #ffffff; /* Cor preta */
  }
+
 
  .noggers15 {
   font-family: Raleway;
@@ -322,7 +347,7 @@ height: 5%;
 }
 
 .noggers15::before {
-  background-color: rgba(255, 0, 0, 0.342);
+  background-color: #0e4c5c8f;
   bottom: 7%;
   content: "";
   display: block;
@@ -405,7 +430,7 @@ height: 5%;
 }
 
 .noggers100::before {
-  background-color: rgba(255, 0, 0, 0.342);
+  background-color: #0e4c5c8f;
   bottom: 1%;
   content: "";
   display: block;
@@ -425,7 +450,7 @@ height: 5%;
 
 .team-member {
   width: 200px;
-  height: 250px;
+  height: 280px;
   margin: 40px;
   text-align: center;
 }
@@ -435,6 +460,12 @@ height: 5%;
   height: 100%;
   object-fit: cover;
   border-radius: 5%;
+  transition: transform 0.3s ease; /* Adiciona uma transição suave */
+}
+
+.team-member img:hover {
+  transform: translateY(-3%); /* Move a imagem 10px para cima quando o mouse passar sobre */
+  filter: drop-shadow(4px 4px 6px rgba(56, 178, 209, 0.719));
 }
 
 .team-info {
@@ -463,7 +494,7 @@ height: 5%;
 }
 
 .noggers1012::before {
-  background-color: rgba(255, 0, 0, 0.342);
+  background-color: #0e4c5c8f;
   bottom: 5%;
   content: "";
   display: block;
@@ -488,7 +519,7 @@ height: 5%;
 }
 
 .noggers34::before {
-  background-color: rgba(255, 0, 0, 0.342);
+  background-color: #0e4c5c8f;
   bottom: 7%;
   content: "";
   display: block;
@@ -512,7 +543,7 @@ height: 5%;
 }
 
 .noggers455::before {
-  background-color: rgba(255, 0, 0, 0.342);
+  background-color: #0e4c5c8f;
   bottom: 7%;
   content: "";
   display: block;
@@ -521,14 +552,6 @@ height: 5%;
   left: 72.5%;
   position: absolute;
   z-index: -1;
-}
-
-.carousel {
-  display: flex;
-  overflow: hidden;
-  width: 100%;
-  max-width: 600px; /* Ajuste o tamanho conforme necessário */
-  margin: 0 auto;
 }
 
 .slide {
@@ -540,7 +563,7 @@ height: 5%;
   display: block;
   text-align: center;
   text-decoration: none;
-  color: #333;
+  color: #0E4D5C;
 }
 
 .slide img {
@@ -552,7 +575,7 @@ height: 5%;
 
 /* Estilo do portfólio */
 .portfolio-item {
-  background-color: rgba(157, 7, 7, 0.907); /* Cor de fundo vermelho transparente */
+  background-color: #0E4D5C; /* Cor de fundo vermelho transparente */
   padding: 20px;
   margin-bottom: 20px;
   border-radius: 10px;
@@ -593,7 +616,7 @@ height: 5%;
 }
 
 .portfolio-details a:hover {
-  background-color: #900; /* Cor de fundo do botão no hover */
+  background-color: #0e4c5c00; /* Cor de fundo do botão no hover */
 }
 
 #navbar {
@@ -609,19 +632,255 @@ footer {
 
 .titlemvv:hover + .descricao {
   display: block;
+  transition: all 0.3s;
 }
 
 .descricao .descricao-text {
   display: none;
+  transition: all 0.3s;
 }
 
 .descricao:hover .descricao-text {
   display: block;
+  transition: all 0.3s;
 }
 .descricao-container .descricao-text {
   display: none;
+  transition: all 0.3s;
 }
 
 .descricao-container:hover .descricao-text {
   display: block;
+  transition: all 0.3s;
+}
+
+.container24 {
+  height: 30%;
+  width: 30%;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Estilizando o texto ao lado da imagem da lua */
+#texto-lua {
+  position: absolute;
+  top: 42.5%;
+  right: 20%; /* Distância do lado direito */
+  transform: translateY(-50%);
+  width: 40%; /* Largura do texto */
+}
+
+#texto-lua p {
+  font-size: 260%;
+  text-align: center; /* Alinhamento do texto à direita */
+  margin-bottom: 5%; /* Espaçamento inferior entre as linhas */
+  color: #0E4D5C
+}
+
+#texto-lua .azul-claro {
+  color: #89bcf4; /* Tom de azul mais claro */
+  font-family: 'HeroBold';
+}
+
+#botao-entre-contato,
+button {
+  display: inline-block;
+  margin-top: 2%;
+  padding: 2% 10%;
+  border: 2px solid #6EB1BE;
+  border-radius: 30px;
+  background-color: transparent;
+  color: #7CB7C2;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-weight: bold;
+  transition: background-color 0.3s, color 0.3s;
+  font-size: 150%;
+  margin-left: 15%;
+}
+
+#botao-entre-contato:hover,
+button:hover {
+  background-color: #6EB1BE;
+  color: white;
+}
+
+.parceiros {
+  display: flex;
+  justify-content: center; /* Centraliza horizontalmente os parceiros */
+  align-items: center; /* Alinha as imagens verticalmente */
+  height: 200px; /* Define a altura desejada */
+  margin-top: 8%;
+  margin-bottom: 9%;
+}
+
+.parceiro {
+  height: 100%; /* Ajusta a altura das imagens para preencher a div */
+  width: auto; /* Mantém a proporção original da imagem */
+  max-width: 30%; /* Define a largura máxima para que as imagens não fiquem muito grandes */
+  transition: transform 0.3s ease; /* Adiciona uma transição suave */
+}
+
+.parceiro:hover {
+  transform: translateY(-19%); /* Move a imagem 10px para cima quando o mouse passar sobre */
+  filter: drop-shadow(4px 4px 6px rgba(0, 0, 0, 0.283));
+}
+.parceirosImg {
+  width: 20%; /* Defina o tamanho da imagem conforme necessário */
+  height: auto;
+  display: block;
+  margin-left: 37.5%; /* Centraliza a imagem horizontalmente */
+  opacity: 0; /* Inicialmente, a imagem estará invisível */
+}
+
+@keyframes fadeIn {
+  from {
+      opacity: 0;
+  }
+  to {
+      opacity: 1;
+  }
+}
+
+/* Aplica a animação à classe quando entra na tela */
+.animacao9 {
+  animation: fadeIn 2.5s ease forwards;
+}
+
+.central {
+  margin: 0 auto; /* Centraliza horizontalmente */
+}
+
+.SobreNosImg {
+  width: 50%; /* Defina o tamanho da imagem conforme necessário */
+  height: auto;
+  display: block;
+  margin-left: 50%; /* Centraliza a imagem horizontalmente */
+  opacity: 1; /* Inicialmente, a imagem estará invisível */
+}
+
+.containerSobre {
+  background-color: #052e3f;
+    border-radius: 10px;
+    max-width: 100%;
+    margin: auto;
+}
+.tituloSobre {
+  font-weight: bold; /* Texto em negrito */
+  margin-bottom: 2%; /* Espaçamento abaixo do título */
+  text-align: center;
+  font-family: HeroRegular;
+  color: #ffffff;
+}
+.textoSobre {
+  margin-bottom: 20px; /* Espaçamento abaixo do texto */
+  text-align: center;
+  color: #ffffff;
+  opacity: 1;
+  font-family: HeroRegular;
+}
+
+.equipeImg {
+  width: 10%; /* Defina o tamanho da imagem conforme necessário */
+  height: auto;
+  display: block;
+  margin-left: 45%; /* Centraliza a imagem horizontalmente */
+  opacity: 1; /* Inicialmente, a imagem estará invisível */
+  margin-bottom: 5%;
+}
+
+.principiosImg {
+  width: 35%; /* Defina o tamanho da imagem conforme necessário */
+  height: auto;
+  display: block;
+  margin-left: 33%; /* Centraliza a imagem horizontalmente */
+  opacity: 1; /* Inicialmente, a imagem estará invisível */
+  margin-bottom: 5%;
+}
+
+.custom-container {
+  background-color: transparent;
+  border: 3px solid rgb(255, 255, 255);
+  border-radius: 20px;
+  padding: 20px;
+}
+
+.casesImg {
+  width: 14%; /* Defina o tamanho da imagem conforme necessário */
+  height: auto;
+  display: block;
+  margin-left: 43%; /* Centraliza a imagem horizontalmente */
+  opacity: 1; /* Inicialmente, a imagem estará invisível */
+  margin-bottom: 5%;
+}
+
+.video-container {
+  position: relative;
+  overflow: hidden;
+  padding-top: 56.25%; /* Proporção 16:9 (divide a altura pelo largura) */
+}
+
+.video-container iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.explanation {
+  padding: 20px;
+}
+
+.nuvemIMG {
+height: 250%;
+width: 250%;
+margin-left: -25%; /* Centraliza a imagem horizontalmente */
+}
+
+.container1000{
+  align-self: center;
+  justify-self: center;
+}
+
+.parceiro4 {
+  height: 100%; /* Ajusta a altura das imagens para preencher a div */
+  width: auto; /* Mantém a proporção original da imagem */
+  max-width: 100%; /* Define a largura máxima para que as imagens não fiquem muito grandes */
+  transition: transform 0.3s ease; /* Adiciona uma transição suave */
+}
+
+.parceiro4IMG{
+  width: 100%; /* Defina o tamanho da imagem conforme necessário */
+  height: auto;
+  display: block;
+  margin-left: 32.5%; /* Centraliza a imagem horizontalmente */
+  opacity: 0; /* Inicialmente, a imagem estará invisível */
+  transition: transform 0.3s ease; /* Adiciona uma transição suave */
+}
+
+.parceiro4IMG:hover {
+  transform: translateY(-19%); /* Move a imagem 10px para cima quando o mouse passar sobre */
+  filter: drop-shadow(4px 4px 6px rgba(0, 0, 0, 0.283));
+}
+
+.c8{
+  width: 100%; /* Defina o tamanho da imagem conforme necessário */
+  height: auto;
+  display: block;
+  transition: transform 0.3s ease; /* Adiciona uma transição suave */
+}
+
+.c8:hover {
+  transform: translateY(-19%); /* Move a imagem 10px para cima quando o mouse passar sobre */
+  filter: drop-shadow(4px 4px 6px rgba(0, 0, 0, 0.283));
+}
+
+.solucoesImg {
+  width: 25%; /* Defina o tamanho da imagem conforme necessário */
+  height: auto;
+  display: block;
+  margin-left: 37.5%; /* Centraliza a imagem horizontalmente */
+  opacity: 0; /* Inicialmente, a imagem estará invisível */
 }

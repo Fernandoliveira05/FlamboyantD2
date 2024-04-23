@@ -12,11 +12,8 @@ $(document).ready(function(){
     })
   })
 
- // script.js
-const carousel = document.querySelector('.carousel');
-const slides = document.querySelectorAll('.slide');
+  const carousel = document.querySelector('.carousel');
 
-let currentIndex = 0;
 
 function showSlide(index) {
     slides.forEach((slide, i) => {
@@ -75,6 +72,7 @@ prevBtn.addEventListener('click', prevSlide);
 // Mostra o primeiro slide ao carregar a página
 showSlide(currentIndex);
 
+
 //IMPRENSA
 // Seleciona os elementos necessários
 const readMoreButtons = document.querySelectorAll('.btn-primary');
@@ -116,3 +114,94 @@ document.addEventListener('click', (e) => {
     }, 300);
   }
 });
+
+document.getElementById('search-form').addEventListener('submit', function(event) {
+  event.preventDefault(); // Impede o envio do formulário
+  var searchIcon = document.getElementById("search-icon");
+  searchIcon.style.display = "none";
+  // Aqui você pode adicionar a lógica para processar a pesquisa
+});
+
+function abrirPagina(imagem) {
+  // Aqui você pode redirecionar para diferentes páginas com base na imagem clicada
+  // Por exemplo:
+  if (imagem === 'imagem1') {
+      window.location.href = 'pagina1.html';
+  } else if (imagem === 'imagem2') {
+      window.location.href = 'pagina2.html';
+  } else if (imagem === 'imagem3') {
+      window.location.href = 'pagina3.html';
+  } else if (imagem === 'imagem4') {
+      window.location.href = 'pagina4.html';
+  }
+}
+
+document.addEventListener('DOMContentLoaded', function() {
+  var parceirosImg = document.querySelector('.parceirosImg');
+
+  function isElementInViewport(el) {
+      var rect = el.getBoundingClientRect();
+
+      var windowHeight = (window.innerHeight || document.documentElement.clientHeight);
+      
+      // Defina uma margem de 100 pixels para cima e para baixo
+      var margin = 0;
+
+      return (
+          rect.top >= -margin &&
+          rect.bottom <= (windowHeight + margin)
+      );
+  }
+
+  function checkVisibility() {
+      if (isElementInViewport(parceirosImg)) {
+          parceirosImg.classList.add('animacao9');
+          window.removeEventListener('scroll', checkVisibility);
+      }
+  }
+
+  window.addEventListener('scroll', checkVisibility);
+
+  // Chamando checkVisibility também quando a página for carregada
+  checkVisibility();
+});
+
+document.addEventListener('DOMContentLoaded', function() {
+  var parceiros = document.querySelectorAll('.parceiros .parceiro');
+  var centralIndex = Math.floor(parceiros.length / 2); // Calcula o índice do parceiro central
+
+  parceiros[centralIndex].classList.add('central');
+});
+
+// Variável global para armazenar o player do YouTube
+var player;
+
+// Função que cria o player do YouTube
+function onYouTubeIframeAPIReady() {
+  player = new YT.Player('player', {
+    height: '315',
+    width: '560',
+    videoId: 'MxRLHg_STgY', // Substitua pelo ID do vídeo do YouTube
+    playerVars: {
+      'autoplay': 0, // Autoplay desativado
+      'controls': 1, // Exibir controles do player
+      'rel': 0, // Desativar vídeos relacionados no final
+      'showinfo': 0 // Ocultar informações do vídeo
+    }
+  });
+}
+
+// Função que cria o player do YouTube
+function onYouTubeIframeAPIReady() {
+  player = new YT.Player('player2', {
+    height: '315',
+    width: '560',
+    videoId: 'HfKBL3JkUU&t=8s', // Substitua pelo ID do vídeo do YouTube
+    playerVars: {
+      'autoplay': 0, // Autoplay desativado
+      'controls': 1, // Exibir controles do player
+      'rel': 0, // Desativar vídeos relacionados no final
+      'showinfo': 0 // Ocultar informações do vídeo
+    }
+  });
+}
